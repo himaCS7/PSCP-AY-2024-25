@@ -17,15 +17,15 @@ int main()
 
 double large_power3(int x,int n)
 {
-	double p=1, psq=x;
+	double p=1, q=x;
 	while(n>0)
 	{
 		if(n%3 == 2)
-			p = p*psq*psq; //x^2*p
+			p = p*q*q; //p*(q)^2
 		else if (n%3 == 1)
-		    p = p*psq; 
+		    p = p*q; 
 		n = n/3;
-		psq = psq*psq*psq; //x^3 for base 3
+		q = q*q*q; //(q)^3 for base 3
 	}
 	return p;
 }
@@ -33,13 +33,13 @@ double large_power3(int x,int n)
 //base 2 logic already discussed earlier
 double large_power2(int x,int n)
 {
-	double p=1, psq=x;
+	double p=1, q=x;
 	while(n>0)
 	{
 		if(n%2 == 1)
-			p = p*psq;
+			p = p*q;
 		n = n/2;
-		psq = psq*psq; // square for base 2
+		q = q*q; // square for base 2
 	}
 	return p;
 }
