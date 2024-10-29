@@ -3,18 +3,18 @@
 int main()
 {
 
-  int n;
-  int flag = 0; // no terms >2 and even 
+	int n;
+	int flag = 0; // no terms >2 and even 
 
   // initialize first and second terms
-  int t1 = 0, t2 = 1;
+	int t1 = 0, t2 = 1;
 
   // initialize the next term (3rd term)
-  int nextTerm = t1 + t2;
+	int nextTerm = t1 + t2;
 
   // get no. of terms from user
-  printf("Enter the number of terms, n: ");
-  scanf("%d", &n);
+	printf("Enter the number of terms, n: ");
+	scanf("%d", &n);
 /*  if(n <= 6)
 	printf("there are no fib terms even and greater than 2 in the first %d terms\n", n);
   else
@@ -25,12 +25,11 @@ int main()
 			printf("%d ", nextTerm);
 			flag = 1;
 		}
-    	t1 = t2;
-	    t2 = nextTerm;
-    	nextTerm = t1 + t2;
+		t1 = t2;
+		t2 = nextTerm;
+		nextTerm = t1 + t2;
 	}
-  if(flag == 0)
-	printf("there are no fib terms even and greater than 2 below %d\n", n);
-	
-  return 0;
+	if(flag == 0)
+		printf("there are no fib terms even and greater than 2 below %d\n", n);
+	return 0;
 }
