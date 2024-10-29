@@ -14,12 +14,17 @@ void doublePrime(int n)
 			break;
 	if(i > s)
 		printf("yes\n");
-	else printf("no\n");
+	else if(m == 2 || m==3) //for 2 and 3, the loop is not executed as s < 2
+		printf("yes\n");
+	else
+	 printf("no\n");
 }
 int main() {
 	doublePrime(10);
 	doublePrime(20);
 	doublePrime(25);
-	doublePrime(26);
+	doublePrime(9);
+	doublePrime(4);
+	doublePrime(6);
 	return 0;
 }	
