@@ -18,22 +18,22 @@ int main()
 }
 int uniqueElements(int a[], int n)
 {
-	int i=0,j=0, cnt=1;
-	while(j < n-1)
+	int i=0,j=0, cnt=1; // i for storing the unique elements, j to keep track of the number of times the jth element is seen
+	while(j < n-1)  //loop upto j=n-2, as a[j+1] is undefined when j=n-1
 	{
 		if(a[j] == a[j+1]) // next element is same as jth, increment count
 			cnt++;
-		else if (cnt > 1) // jth element is seen many times, >1
+		else if (cnt > 1) // jth element is seen many times, >1; as next element is different, set count=1
 			cnt =1;
-		else  // the jth element is seen only once
+		else  // the jth element is seen only once, so store it at ith index
 		{
 			a[i] =  a[j];
 			i++;
 		} 
 		j++; 
 	}
-	//when j is at the last element
-	if(cnt == 1){
+	//when j is at the last element, at index n-1
+	if(cnt == 1){ // a[j] is seen only once, so store at ith index 
 		a[i] = a[j];
 		i++;
 	}
