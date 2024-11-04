@@ -5,7 +5,7 @@ int main()
         int h[26]={0};
         int c; 
 
-        printf("Enter text (use Ctrl+D on Unix or Ctrl+Z on Windows to terminate):\n");
+        printf("Enter text : \n"); //use Ctrl+D on Unix or Ctrl+Z on Windows to terminate if EOF is used for multiline text
         while((c=getchar())!='\n') // '\n' to read a single line, use EOF to read multiple lines
         {
             //check if c is an alphabet
