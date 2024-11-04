@@ -14,7 +14,7 @@ int main()
                 //if c is in upper case, convert to lower case 
                 //c = tolower(c); // OR, use if() as shown below
                 if(c >='A' && c <= 'Z')
-                    c=c+'a'-'A'; //difference in the ASCII values of lower and upper case
+                    c=c+'a'-'A'; //add the difference in the ASCII values of lower and upper case = 32 to convert to lower case
                 h[c-'a']++; //'a' index = 0, 'b' index = 1, ...
             }
         }
