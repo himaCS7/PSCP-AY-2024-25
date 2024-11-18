@@ -23,9 +23,12 @@ int main()
     printf(" *ptr = %d \n", *ptr);
 
 	ptr--; //ptr is at arr[0] again
-	for(int i=0; i<5; i++)
-    	printf(" ptr+%d = %p, *ptr = %d \n",i, ptr+i, *(ptr+i));
 
+	//ptr is at arr[0]
+	for(int i=0; i<5; i++)
+    	printf(" ptr+%d = %p, *ptr = %d %d %d\n",i, ptr+i, *(ptr+i), i[arr],arr[i]);
+
+	//ptr is at arr[0]
 	for(int i=0; i<5; i++,ptr++)
     	printf(" ptr = %p, *ptr = %d \n", ptr, *ptr);
     return 0;
