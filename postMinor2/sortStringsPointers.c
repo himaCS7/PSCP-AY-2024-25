@@ -24,7 +24,7 @@ int main()
 {
 	char *s[] = {"January", "February", "March", "April", "May", "June"};
 	int n = 6;
-	printf("The array of strings initially: ");
+	printf("The array of strin0gs initially: ");
 	for (int i = 0; i < n; i++)
 		printf("%s ", s[i]); // puts() can also be used to print string
 	insertionSort(s, n);
