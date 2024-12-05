@@ -12,7 +12,7 @@ int main()
     printf("Enter the number of names: ");
     scanf("%d", &n);
 
-    // Allocate memory for `n` student names
+    // Allocate memory for 'n' char pointers
     names = (char **)malloc(n * sizeof(char *)); // array of n pointers, each pointer will point to a string
     if (names == NULL)
     {

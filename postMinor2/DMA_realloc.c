@@ -12,11 +12,13 @@ Resizing with realloc:
 int main()
 {
     int *arr;
-    int size = 5; // Initial size of the array
+    int size; // Initial size of the array
     int newSize, i;
 
+    printf("enter size: ");
+    scanf("%d", &size);
     // Allocate memory for the initial array
-    arr = (int *)malloc(size * sizeof(int));
+    arr = (int *)calloc(size, sizeof(int));
     if (arr == NULL)
     {
         printf("Memory allocation failed.\n");
@@ -32,7 +34,7 @@ int main()
     }
 
     // Display the initial array
-    printf("\nInitial Array:\n");
+    printf("\nInitial Array with input values:\n");
     for (i = 0; i < size; i++)
     {
         printf("%d ", arr[i]);

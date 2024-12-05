@@ -35,7 +35,7 @@ int main()
     if (fp == NULL)
     {
         printf("Can't open file\n");
-        return 0;
+        return 1;
     }
     i = 0;
     // read the first line of the file (header) containing the column names and discard
@@ -44,7 +44,7 @@ int main()
     // count the number of lines in the file, excluding the header to know the number of students
     while (fgets(line, L, fp)) // read line until EOF
         i++;
-    n = i; // number of studnets is n
+    n = i; // number of students is n
     printf("number of students in the class =%d\n", n);
     // now allocate the memory to n students
     class = (student *)calloc(n, sizeof(student));

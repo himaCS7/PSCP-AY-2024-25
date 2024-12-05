@@ -28,8 +28,6 @@ int main()
     {
 
         // Memory has been successfully allocated
-        printf("Memory successfully allocated using malloc.\n");
-
         // store elements 1 to n in the array
         for (i = 0; i < n; ++i)
         {
